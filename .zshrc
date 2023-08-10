@@ -143,5 +143,4 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init zsh)"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0)
 # neofetch
