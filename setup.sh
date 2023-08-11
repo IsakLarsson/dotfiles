@@ -5,6 +5,7 @@ echo "Setting up your stuff for you :)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 brew install gh
 brew install starship
 brew install neovim
@@ -14,12 +15,15 @@ brew install bat
 brew install fzf
 brew install lazygit
 $(brew --prefix)/opt/fzf/install
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-cp starship.toml ~/.config/
-cp .zshrc ~
-cp karabiner.json ~/.config/karabiner/
-cp assets ~/.config/karabiner/
-cp .tmux.conf ~
+#NvChad custom setup
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/IsakLarsson/nvchad-custom.git ~/.config/nvchad-custom
+rm -rf ~/.config/nvim/lua/custom
+ln -s ~/.config/nvchad-custom/custom ~/.config/nvim/lua/
+
+sh updatefiles.sh
 
 echo "All done! remember to run prefix I to install tmux plugins!"
