@@ -18,13 +18,12 @@ brew install fzf
 brew install lazygit
 brew install exa
 $(brew --prefix)/opt/fzf/install
-
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "*** Configuring Neovim ***"
 #NvChad custom setup
 
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/IsakLarsson/nvchad-custom.git ~/.config/nvchad-custom
 rm -rf ~/.config/nvim/lua/custom
 ln -s ~/.config/nvchad-custom/custom ~/.config/nvim/lua/
