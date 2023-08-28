@@ -84,14 +84,14 @@ plugins=(git
 	common-aliases
 	node
 	npm
-    sudo
+  sudo
 	rand-quote
 	z
 	colored-man-pages
 	colorize
 	zsh-syntax-highlighting 
-    zsh-autosuggestions
-    alias-finder
+  zsh-autosuggestions
+  alias-finder
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -132,7 +132,7 @@ alias ell="exa -lah --git --no-permissions --icons --no-user --group-directories
 alias cfg="cd ~/.config"
 alias cfn="cd ~/.config/nvim && vim"
 alias l3="lsof -i :3000"
-alias zc="cd && vim .zshrc"
+alias zc="vim ~/.zshrc"
 alias lg="lazygit"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
