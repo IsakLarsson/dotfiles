@@ -14,6 +14,7 @@ brew install neovim
 brew install tmux
 brew install --cask karabiner-elements
 brew install bat
+brew install node
 brew install fzf
 brew install lazygit
 brew install exa
