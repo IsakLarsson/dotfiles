@@ -33,3 +33,4 @@ echo "*** Configuring applications ***"
 sh updatefiles.sh
 
 echo "All done! remember to run prefix I to install tmux plugins!"
+echo "Remember to set up your local git email with git config --global user.email YOUR_EMAIL"
