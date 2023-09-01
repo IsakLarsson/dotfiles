@@ -3,6 +3,8 @@
 echo "Remember to install iterm as well :)"
 echo "*** Setting up your stuff for you :) ***"
 
+xcode-select --install
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -10,11 +12,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 echo "*** Installing tools ***"
 
-tools=("gh" "starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa")
+tools=("starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa")
 for TOOL in "${tools[@]}"; do
-do
   brew install $TOOL
 done
+
+echo "*** Tools installed successfully! ***"
+echo "*** Installing TPM.. ***"
 
 $(brew --prefix)/opt/fzf/install
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
