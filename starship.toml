@@ -60,15 +60,15 @@ format = "[$symbol($version )]($style)"
 symbol = " "
 
 [directory]
-style = "purple bold"
+style = "#c6a0f6 bold"
 read_only = " "
 truncation_length = 4
 truncate_to_repo = false
 
 [character]
-success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+success_symbol = "[❯](#a6da95)"
+error_symbol = "[❯](#ed8796)"
+vicmd_symbol = "[❮](#a6da95)"
 
 [git_branch]
 symbol = " "
@@ -77,13 +77,13 @@ style = "bright-yellow bold"
 
 [jobs]
 symbol = ""
-style = "bold red"
+style = "bold #ed8796"
 number_threshold = 1
 format = "[$symbol]($style)"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "cyan"
+style = "#91d7e3"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
@@ -94,7 +94,7 @@ disabled = false
 
 [cmd_duration]
 format = "[$duration]($style)"
-style = "yellow"
+style = "#eed49f"
 
 [memory_usage]
 symbol = " "
