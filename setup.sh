@@ -3,12 +3,6 @@
 echo "Remember to install iterm as well :)"
 echo "*** Setting up your stuff for you :) ***"
 
-xcode-select --install
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew install gh
-gh auth login
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
