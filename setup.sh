@@ -3,7 +3,6 @@
 echo "Remember to install iterm as well :)"
 echo "*** Setting up your stuff for you :) ***"
 
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -33,7 +32,7 @@ ln -s ~/.config/nvchad-custom/custom ~/.config/nvim/lua/
 
 echo "*** Configuring applications ***"
 
-sh updatefiles.sh
+# sh updatefiles.sh
 
 echo "All done! remember to run prefix I to install tmux plugins!"
 echo "Remember to set up your local git email with git config --global user.email YOUR_EMAIL"
