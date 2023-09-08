@@ -92,6 +92,7 @@ plugins=(git
 	zsh-syntax-highlighting 
   zsh-autosuggestions
   alias-finder
+  asdf
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -143,4 +144,3 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init zsh)"
 
-# neofetch
