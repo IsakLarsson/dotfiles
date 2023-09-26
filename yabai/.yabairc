@@ -27,3 +27,8 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Microsoft Outlook$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^TablePlus$" manage=off
+yabai -m rule --add app="^Android Studio$" manage=off
+yabai -m rule --add app="^Simulator$" manage=off
+yabai -m rule --add app="^Xcode$" manage=off
+yabai -m rule --add app="^Docker Desktop$" manage=off

@@ -123,7 +123,8 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim='nvim'
+alias vf='nvim $(fzf)'
+alias v='nvim'
 alias oldvim='vim'
 alias vimh='vim .'
 alias portfolio='cd Code/Portfolio/portfolio5.0/'
@@ -133,8 +134,14 @@ alias ell="exa -lah --git --no-permissions --icons --no-user --group-directories
 alias cfg="cd ~/.config"
 alias cfn="cd ~/.config/nvim && vim"
 alias l3="lsof -i :3000"
-alias zc="vim ~/.zshrc"
+alias zc="v ~/.zshrc"
 alias lg="lazygit"
+alias fnd='\fd'
+
+alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
+alias brewARM="/opt/homebrew/bin/brew"
+
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
