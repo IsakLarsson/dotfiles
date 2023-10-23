@@ -32,3 +32,4 @@ yabai -m rule --add app="^Android Studio$" manage=off
 yabai -m rule --add app="^Simulator$" manage=off
 yabai -m rule --add app="^Xcode$" manage=off
 yabai -m rule --add app="^Docker Desktop$" manage=off
+yabai -m rule --add app="^Shortcuts$" manage=off
