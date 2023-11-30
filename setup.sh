@@ -10,7 +10,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 echo "*** Installing tools ***"
 
-tools=("starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa")
+tools=("starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa" "tmuxinator")
 for TOOL in "${tools[@]}"; do
   brew install $TOOL
 done

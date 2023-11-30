@@ -138,6 +138,8 @@ alias zc="v ~/.zshrc"
 alias lg="lazygit"
 alias fnd='\fd'
 
+alias tx='tmuxinator'
+alias txc='cd ~/.config/tmuxinator/ && v'
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias brewARM="/opt/homebrew/bin/brew"
 
