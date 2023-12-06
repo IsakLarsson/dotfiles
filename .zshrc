@@ -74,6 +74,17 @@ export ZSH="$HOME/.oh-my-zsh"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+#REACT NATIVE STUFF
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+
+export PATH="/usr/local/homebrew/bin":$PATH
+export PATH="/opt/homebrew/bin":$PATH
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -100,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
+# You may seed to manually set your language environment
 # export LANG=en_US.UTF-8
 
 export EDITOR='nvim'
@@ -137,11 +148,11 @@ alias l3="lsof -i :3000"
 alias zc="v ~/.zshrc"
 alias lg="lazygit"
 alias fnd='\fd'
-
 alias tx='tmuxinator'
 alias txc='cd ~/.config/tmuxinator/ && v'
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias brewARM="/opt/homebrew/bin/brew"
+alias rns="npx react-native start"
 
 
 
@@ -151,5 +162,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
+eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
 
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
