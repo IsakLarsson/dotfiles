@@ -138,10 +138,13 @@ alias vf='nvim $(fzf)'
 alias v='nvim'
 alias oldvim='vim'
 alias vimh='vim .'
+alias ve='v .env'
+alias pa='v package.json'
+
 alias portfolio='cd Code/Portfolio/portfolio5.0/'
 alias zshreload="source ~/.zshrc"
 alias el="exa -lh --no-permissions --icons --no-user --group-directories-first"
-alias ell="exa -lah --git --no-permissions --icons --no-user --group-directories-first"
+alias ea="exa -lah --git --no-permissions --icons --no-user --group-directories-first"
 alias cfg="cd ~/.config"
 alias cfn="cd ~/.config/nvchad-custom && v"
 alias l3="lsof -i :3000"
@@ -153,7 +156,7 @@ alias txc='cd ~/.config/tmuxinator/ && v'
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias brewARM="/opt/homebrew/bin/brew"
 alias rns="npx react-native start"
-
+alias envd='nvim -d .env .env.example'
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
