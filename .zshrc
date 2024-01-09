@@ -122,6 +122,17 @@ export EDITOR='nvim'
 #   export EDITOR='mvim'
 #fi
 
+#Find and kill process with fzf
+fkill() {
+  pid=$(ps -ef | sed 1d | fzf -m --ansi --color fg:-1,bg:-1,hl:46,fg+:40,bg+:233,hl+:46 --color prompt:166,border:2 --height 40%  --border=sharp --prompt="➤  " --pointer="➤ " --marker="➤ " | awk '{print $2}')
+
+  if [ "x$pid" != "x" ]
+  then
+    kill -${1:-9} $pid
+  fi
+}
+
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -157,6 +168,7 @@ alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias brewARM="/opt/homebrew/bin/brew"
 alias rns="npx react-native start"
 alias envd='nvim -d .env .env.example'
+alias kp=fkill
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
