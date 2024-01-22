@@ -178,6 +178,7 @@ alias envd='nvim -d .env .env.example'
 alias kp=fkill
 alias gmm="git merge origin main"
 alias gdd="git merge origin development"
+alias gcp="git branch --show-current | pbcopy"
 
 
 
