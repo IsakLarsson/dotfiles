@@ -176,8 +176,7 @@ alias brewARM="/opt/homebrew/bin/brew"
 alias rns="npx react-native start"
 alias envd='nvim -d .env .env.example'
 alias kp=fkill
-alias gmm="git merge origin main"
-alias gdd="git merge origin development"
+alias gmod="git merge origin $(git_develop_branch)"
 alias gcp="git branch --show-current | pbcopy"
 
 
