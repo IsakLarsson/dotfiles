@@ -133,6 +133,10 @@ fkill() {
   fi
 }
 
+#checkout branch
+gch() {
+ git checkout "$(git branch --all | fzf --height 40%| tr -d '[:space:]')"
+}
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -177,7 +181,8 @@ alias rns="npx react-native start"
 alias envd='nvim -d .env .env.example'
 alias kp=fkill
 alias gmod="git merge origin $(git_develop_branch)"
-alias gcp="git branch --show-current | pbcopy"
+alias gbcp="git branch --show-current | pbcopy"
+alias gch=gch
 
 
 
