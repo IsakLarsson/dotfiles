@@ -125,7 +125,7 @@ export EDITOR='nvim'
 
 #Find and kill process with fzf
 fkill() {
-  pid=$(ps -ef | sed 1d | fzf -m --ansi --color fg:-1,bg:-1,hl:46,fg+:40,bg+:233,hl+:46 --color prompt:166,border:2 --height 40%  --border=sharp --prompt="➤  " --pointer="➤ " --marker="➤ " | awk '{print $2}')
+  pid=$(ps -ef | sed 1d | fzf -m --ansi --header "Kill process" --color fg:-1,bg:-1,hl:46,fg+:40,bg+:233,hl+:46 --color prompt:166,border:2 --height 40%  --border=sharp --prompt="➤  " --pointer="➤ " --marker="➤ " | awk '{print $2}')
 
   if [ "x$pid" != "x" ]
   then
@@ -150,7 +150,7 @@ gch() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vf='nvim $(fzf)'
+alias vf="fzf | xargs -n 1 nvim"
 alias v='nvim'
 alias oldvim='vim'
 alias vimh='vim .'
@@ -183,6 +183,8 @@ alias kp=fkill
 alias gmod="git merge origin $(git_develop_branch)"
 alias gbcp="git branch --show-current | pbcopy"
 alias gch=gch
+alias vimdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
+alias fman="compgen -c | fzf | xargs man"
 
 
 
