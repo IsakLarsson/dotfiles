@@ -18,4 +18,4 @@ ln -s $current_directory/starship.toml ~/.config/starship.toml
 ln -s $current_directory/.zshrc ~/.zshrc
 ln -s $current_directory/karabiner.json ~/.config/karabiner/karabiner.json
 ln -s $current_directory/assets ~/.config/karabiner/
-ln -s $current_directory/alacritty/alacritty.yml ~/.config/alacritty
+ln -s $current_directory/alacritty/alacritty.toml ~/.config/alacritty
