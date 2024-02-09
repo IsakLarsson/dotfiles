@@ -150,7 +150,7 @@ gch() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vf="fzf | xargs -n 1 nvim"
+alias vf='nvim $(fzf)'
 alias v='nvim'
 alias oldvim='vim'
 alias vimh='vim .'
