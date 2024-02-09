@@ -183,7 +183,7 @@ alias kp=fkill
 alias gmod="git merge origin $(git_develop_branch)"
 alias gbcp="git branch --show-current | pbcopy"
 alias gch=gch
-alias vimdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
+alias vdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
 alias fman="compgen -c | fzf | xargs man"
 
 
