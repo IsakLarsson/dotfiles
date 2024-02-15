@@ -11,7 +11,7 @@ git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/p
 
 echo "*** Installing tools ***"
 
-tools=("starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa" "tmuxinator")
+tools=("starship" "neovim" "tmux" "--cask karabiner-elements" "bat" "node" "fzf" "lazygit" "exa" "tmuxinator" "zoxide")
 for TOOL in "${tools[@]}"; do
   brew install $TOOL
 done

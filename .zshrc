@@ -97,7 +97,6 @@ plugins=(git
 	npm
   sudo
 	rand-quote
-	z
 	colored-man-pages
 	colorize
 	zsh-syntax-highlighting 
@@ -197,5 +196,6 @@ export NVM_DIR="$HOME/.nvm"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
