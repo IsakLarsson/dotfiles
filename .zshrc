@@ -137,6 +137,10 @@ gch() {
  git checkout "$(git branch --all | fzf --height 40%| tr -d '[:space:]')"
 }
 
+pjson(){
+  echo "$1" | jq
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -149,7 +153,7 @@ gch() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vf='nvim $(fzf)'
+alias vf='nvim $(fzf --height 40% --reverse)'
 alias v='nvim'
 alias oldvim='vim'
 alias vimh='vim .'
