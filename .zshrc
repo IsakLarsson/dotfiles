@@ -141,6 +141,10 @@ pjson(){
   echo "$1" | jq
 }
 
+lsFileType(){
+  lsa *.${1}
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -189,6 +193,7 @@ alias gch=gch
 alias vdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
 alias fman="compgen -c | fzf | xargs man"
 alias openurl="tmux capture-pane -J -p | grep -oE '(https?):\/\/.*[^>]' | fzf-tmux -d20 --multi --bind alt-a:select-all,alt-d:deselect-all | xargs open"
+alias lst=lsFileType
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
