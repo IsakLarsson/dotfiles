@@ -17,8 +17,8 @@ draw_bold_text_with_bright_colors = true
 # foreground = "0xd8dee9"
 #
 [colors.cursor]
-text = "0x2e3440"
-cursor = "0xd8dee9"
+text = "CellBackground"
+cursor = "0xB8DABB"
 #
 # [colors.vi_mode_cursor]
 # text = "0x2e3440"
