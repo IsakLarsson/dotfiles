@@ -145,6 +145,10 @@ lsFileType(){
   lsa *.${1}
 }
 
+
+# VI mode
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -192,8 +196,8 @@ alias gbcp="git branch --show-current | pbcopy"
 alias gch=gch
 alias vdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
 alias fman="compgen -c | fzf | xargs man"
-alias openurl="tmux capture-pane -J -p | grep -oE '(https?):\/\/.*[^>]' | fzf-tmux -d20 --multi --bind alt-a:select-all,alt-d:deselect-all | xargs open"
 alias lst=lsFileType
+alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
