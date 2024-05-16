@@ -210,5 +210,8 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
+# Append a command directly
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+
+eval $(thefuck --alias)
