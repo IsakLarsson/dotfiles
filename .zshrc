@@ -147,7 +147,7 @@ lsFileType(){
 
 
 # VI mode
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -170,14 +170,15 @@ alias pa='v package.json'
 
 alias portfolio='cd Code/Portfolio/portfolio5.0/'
 alias zshreload="source ~/.zshrc"
-alias el="exa -lh --no-permissions --icons --no-user --group-directories-first"
-alias ea="exa -lah --git --no-permissions --icons --no-user --group-directories-first"
-alias ls='exa'                                                          # ls
-alias l='exa -lbF --git --icons --group-directories-first'              # list, size, type, git
-alias ll='exa -lbGF --git --group-directories-first --icons'            # long list
-alias llm='exa -lbGd --git --sort=modified'                             # long list, modified date sort
-alias la='exa -lbhHigUmuSa --icons --time-style=long-iso --git --color-scale --group-directories-first'  # all list
-alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
+alias el="eza -lh --no-permissions --icons --no-user --group-directories-first"
+alias ea="eza -lah --git --no-permissions --icons --no-user --group-directories-first"
+alias ls='eza'                                                          # ls
+alias l='eza -lbF --git --icons --group-directories-first'              # list, size, type, git
+alias lt='eza -lbF --git --icons  --tree --level=2'                     # tree
+alias ll='eza -lbGF --git --group-directories-first --icons'            # long list
+alias llm='eza -lbGd --git --sort=modified'                             # long list, modified date sort
+alias la='eza -lbhHigUmuSa --icons --time-style=long-iso --git --color-scale --group-directories-first'  # all list
+alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias cfg="cd ~/.config"
 alias cfn="cd ~/.config/nvchad-custom && v"
 alias l3="lsof -i :3000"
@@ -190,6 +191,7 @@ alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias brewARM="/opt/homebrew/bin/brew"
 alias rns="npx react-native start"
 alias envd='nvim -d .env .env.example'
+alias dockd='nvim -d .docker/local/docker-compose.yml .docker/local/docker-compose.yml.example'
 alias kp=fkill
 alias gmod="git merge origin $(git_develop_branch)"
 alias gbcp="git branch --show-current | pbcopy"
@@ -211,7 +213,7 @@ eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 # Append a command directly
-zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+# zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
 eval $(thefuck --alias)
