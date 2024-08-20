@@ -200,7 +200,8 @@ alias vdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
 alias fman="compgen -c | fzf | xargs man"
 alias lst=lsFileType
 alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
-
+alias exs="exercism submit"
+alias gt="gleam test"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
