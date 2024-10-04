@@ -20,3 +20,4 @@ ln -s $current_directory/karabiner.json ~/.config/karabiner/karabiner.json
 ln -s $current_directory/assets ~/.config/karabiner/
 ln -s $current_directory/alacritty/alacritty.toml ~/.config/alacritty
 ln -s $current_directory/alacritty/themes ~/.config/alacritty
+ln -s $current_directory/sketchybar ~/.config/
