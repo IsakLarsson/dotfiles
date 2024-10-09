@@ -202,6 +202,7 @@ alias lst=lsFileType
 alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
 alias exs="exercism submit"
 alias gt="gleam test"
+alias npr="npm run docker"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
