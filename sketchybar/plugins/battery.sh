@@ -10,9 +10,9 @@ fi
 case "${PERCENTAGE}" in
   9[0-9]|100) ICON="" COLOR="0xFFDAF7A6"
   ;;
-  [6-8][0-9]) ICON="" COLOR="0xFFFF5733"
+  [6-8][0-9]) ICON="" COLOR="0xFFFFEC9E"
   ;;
-  [3-5][0-9]) ICON="" COLOR="0xFFC70039"
+  [3-5][0-9]) ICON="" COLOR="0xFFFFEC9E"
   ;;
   [1-2][0-9]) ICON="" COLOR="0xFF900C3F"
   ;;
