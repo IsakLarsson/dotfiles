@@ -201,7 +201,9 @@ alias fman="compgen -c | fzf | xargs man"
 alias lst=lsFileType
 alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
 alias gall="g++ $1 $2 -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror"
-
+alias exs="exercism submit"
+alias gt="gleam test"
+alias npr="npm run docker"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
