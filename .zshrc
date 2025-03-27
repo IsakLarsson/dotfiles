@@ -200,6 +200,7 @@ alias vdiff="fzf -m 2 --bind 'enter:select+accept' | xargs -n 2 nvim -d"
 alias fman="compgen -c | fzf | xargs man"
 alias lst=lsFileType
 alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
+alias gall="g++ $1 $2 -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
