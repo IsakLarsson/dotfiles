@@ -7,7 +7,7 @@ My personal dotfiles for Arch Linux, managed with [GNU Stow](https://www.gnu.org
 - **Ghostty** 
 - **Zsh**  
 - **Tmux**
-- **Neovim**  
+- **Neovim**  - Submoduled from my [Neovim-2025 repo](https://github.com/IsakLarsson/nvim-2025)
 
 ## 🛠 Setup
 
