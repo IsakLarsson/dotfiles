@@ -14,7 +14,7 @@ My personal dotfiles for Arch Linux, managed with [GNU Stow](https://www.gnu.org
 Clone the repository into your home directory (or wherever you prefer):
 
 ```bash
-git clone https://github.com/<IsakLarsson>/dotfiles.git ~/.dotfiles
+git clone https://github.com/IsakLarsson/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ``` 
 Make sure you have all the packages installed 
