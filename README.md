@@ -19,7 +19,7 @@ cd ~/.dotfiles
 ``` 
 Make sure you have all the packages installed 
 ```bash
-pacman -S tmux nvim ghostty zsh stow
+pacman -S tmux nvim ghostty zsh stow eza
 ```
 
 Create symlinks with 
