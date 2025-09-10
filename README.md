@@ -1,7 +1,7 @@
 # Dotfiles
 
 My personal dotfiles for Arch Linux, managed with [GNU Stow](https://www.gnu.org/software/stow/).
-
+For my MacOS dotfiles, check out the `macos` branch, however these are not nearly as organized.
 ## 📦 Contents
 
 - **Ghostty** 
