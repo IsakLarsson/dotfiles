@@ -203,7 +203,9 @@ alias plugs="nvim ~/.config/nvchad-custom/custom/plugins.lua"
 alias gall="g++ $1 $2 -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror"
 alias exs="exercism submit"
 alias gt="gleam test"
-alias npr="npm run docker"
+alias npd="npm run docker"
+alias dev="cd ~/code/savr/new/dev/"
+alias venv="v .env"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -220,3 +222,10 @@ eval "$(zoxide init --cmd cd zsh)"
 export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
 eval $(thefuck --alias)
+
+# bun completions
+[ -s "/Users/isakamanlarsson/.bun/_bun" ] && source "/Users/isakamanlarsson/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

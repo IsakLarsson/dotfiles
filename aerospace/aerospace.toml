@@ -121,11 +121,13 @@ alt-shift-equal = 'resize smart +200'
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
-alt-4 = 'move-node-to-workspace 1' # In your config, you can drop workspace bindings that you don't need
-alt-5 = 'workspace 5'
+alt-4 = 'workspace 4' # In your config, you can drop workspace bindings that you don't need
+alt-5 = 'move-node-to-workspace 1'
 alt-6 = 'workspace 6'
+
 alt-e = 'move-node-to-workspace 2'
 alt-i = 'move-node-to-workspace 3'
+alt-o= 'move-node-to-workspace 4'
 
 alt-f = "fullscreen"
 
