@@ -14,7 +14,7 @@ For my MacOS dotfiles, check out the `macos` branch, however these are not nearl
 Clone the repository into your home directory (or wherever you prefer):
 
 ```bash
-git clone https://github.com/IsakLarsson/dotfiles.git ~/.dotfiles
+git clone --recurse-submodules https://github.com/IsakLarsson/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ``` 
 Make sure you have all the packages installed 
