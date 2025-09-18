@@ -215,7 +215,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 eval "$(rbenv init - zsh)"
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 # Append a command directly
 # zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
@@ -226,6 +226,7 @@ eval $(thefuck --alias)
 # bun completions
 [ -s "/Users/isakamanlarsson/.bun/_bun" ] && source "/Users/isakamanlarsson/.bun/_bun"
 
+eval "$(oh-my-posh init zsh --config 'https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/amro.omp.json')"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
